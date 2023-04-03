@@ -11,4 +11,3 @@ DOI: https://doi.org/10.1016/j.eswa.2023.119956
 ## License
 MIT
 
-The data and source code of the study will be available soon.
