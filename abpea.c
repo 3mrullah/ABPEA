@@ -74,14 +74,6 @@ void CalcDisSim(int loc, bool xi[loc], bool xk[loc], bool ind_x[][loc], int tid,
         ind_x[tid][i] = xi[i];
     }
 	
-	//printf("M11 = %d, M01 = %d, M10 = %d, n1 = %d, n0 = %d\n", M11, M01, M10, n1, n0);
-	
-    /*printf("\n");
-	for(i=0; i<loc; i++)
-        printf("%d ", ind_x[tid][i]);
-	printf(" (%d) ", tid);*/
-	
-	//getchar();
 	
     sim = M01 + M10 + 2*M11;
 	
@@ -126,16 +118,9 @@ void CalcDisSim(int loc, bool xi[loc], bool xk[loc], bool ind_x[][loc], int tid,
 			rand0[jj] = i;
 			jj++;
 		}
-		//printf("b2");
+		
 	}
-	//printf("\nj = %d , jj = %d", j, jj);
-   
-	//printf("\nm11v = %d , nm10v = %d", m11v, m10v);
-	//printf("\n");
-	/*for(i=0; i<loc; i++)
-		printf(" %d ",ind_x[tid][i]);*/
 	
-	// m11!
     k = n1 - m11v;
     while (k>0)
     {
@@ -153,13 +138,7 @@ void CalcDisSim(int loc, bool xi[loc], bool xk[loc], bool ind_x[][loc], int tid,
 		
     }	
 	
-	/*printf("\nm11v = %d , nm10v = %d", m11v, m10v);
-	printf("\nR");
-	for(i=0; i<jj; i++)
-		printf(" %d ",rand0[i]);*/
-	
 
-	//printf("\nm10v = %d , jj = %d", m10v, jj);
     k = m10v;	
     while (k>0)
     {
@@ -177,23 +156,8 @@ void CalcDisSim(int loc, bool xi[loc], bool xk[loc], bool ind_x[][loc], int tid,
 			jj = jj -1;
 			
         }
-		
-		//printf("\nk = %d (%d -> %d)",k,i, jj);
-		//printf("\n\n");
-		//for(i=0; i<loc; i++)
-		//	printf(" %d ",ind_x[tid][i]);
-		//printf("e");
-    }
-	
-    // m10!
 
-     // return new individual
-	 
-	/*printf("\n");
-	for(i=0; i<loc; i++)
-        printf("%d ", ind_x[tid][i]);
-	printf(" (_%d) ", tid);*/
-	//getchar();
+    }
 	 
 	}
 }
